@@ -1,9 +1,15 @@
 import sqlite3
+import find_student
 
 def add_student():
     first = input("Enter the first name >> ")
     last = input("Enter the last name >> ")
-    studentid = int(input("Enter student ID >> "))
+    while True:
+        studentid = int(input("Enter student ID >> "))
+        while True:
+            if find_student.get_student_info(studentid) == False:
+                studentid = int(input("Invalid student id... enter new one \nEnter student ID >> "))
+    
     p1 = input("Enter period 1 course >> ")
     p2 = input("Enter period 2 course >> ")
     p3 = input("Enter period 3 course >> ")
