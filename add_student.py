@@ -4,8 +4,8 @@ import Check_Student_ID
 
 def add_student():
 
-    first = input("Enter the first name >> ")
-    last = input("Enter the last name >> ")
+    first = input("Enter the student's first name >> ")
+    last = input("Enter the student's last name >> ")
     studentid = int(input("Enter student ID >> "))
     while True:
         if Check_Student_ID.Check_Student(studentid) == False:
@@ -14,13 +14,13 @@ def add_student():
             break
 
 
-    p1 = input("Enter period 1 course >> ")
-    p2 = input("Enter period 2 course >> ")
-    p3 = input("Enter period 3 course >> ")
-    p4 = input("Enter period 4 course >> ")
+    p1 = input("Enter class 1 course code >> ")
+    p2 = input("Enter class 2 course code >> ")
+    p3 = input("Enter class 3 course code >> ")
+    p4 = input("Enter class 4 course code >> ")
 
     conn = sqlite3.connect('students.db')
     c = conn.cursor()
-    c.execute("INSERT INTO students VALUES ('{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(first, last, studentid, p1, p2, p3 ,p4))
+    c.execute("INSERT INTO students VALUES ('{}', '{}', '{}', '\n{}', '\n{}', '\n{}', '\n{}')".format(first, last, studentid, p1, p2, p3 ,p4))
     conn.commit()
     conn.close()

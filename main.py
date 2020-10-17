@@ -10,14 +10,15 @@ while __name__ == "__main__":
                     \n>> Delete a student (3)
                     \n>> Quit (4)
                     \n>> """)
-    
+
     if int(choice) == 1:
         add_student.add_student()
     elif int(choice) == 2:
         student_num = input("Please enter the student's number >> ")
-        find_student.get_student_info(int(student_num))
+        data = find_student.get_student_info(int(student_num))
+        print(data)
     elif int(choice) == 3:
-        student_num = input("Please enter the student's number >> ") 
+        student_num = input("Please enter the student's number >> ")
         delete_student.del_student(int(student_num))
     else:
         print("Thanks for using the program.")
