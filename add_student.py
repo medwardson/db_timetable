@@ -3,6 +3,7 @@ import find_student
 import Check_Student_ID
 
 def add_student():
+
     first = input("Enter the first name >> ")
     last = input("Enter the last name >> ")
     studentid = int(input("Enter student ID >> "))

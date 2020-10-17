@@ -18,8 +18,8 @@ c = conn.cursor()
 # c.execute("SELECT * FROM students WHERE first='Mesha'")
 # c.execute("DELETE FROM students WHERE id='2556421'")
 
-c.execute("SELECT * FROM students WHERE id='2556421'")
-ossysresult = c.fetchall()
+c.execute("SELECT * FROM students WHERE id='2'")
+ossysresult = c.fetchone()
 print(ossysresult)
 
 conn.commit()
