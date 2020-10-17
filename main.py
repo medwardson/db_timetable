@@ -8,7 +8,7 @@ while __name__ == "__main__":
     if int(choice) == 1:
         add_student.add_student()
     elif int(choice) == 2:
-        student_num = input("Please enter the student's number >> ") 
+        student_num = input("Please enter the student's number >> ")
         find_student.get_student_info(int(student_num))
     else:
         print("Thanks for using the program.")
