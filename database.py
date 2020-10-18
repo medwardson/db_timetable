@@ -20,10 +20,10 @@ c = conn.cursor()
 # c.execute("DELETE FROM students WHERE id='2556421'")
 
 c.execute("SELECT * FROM students")
-ossysresult = c.fetchone()
+ossysresult = c.fetchall()
 print(ossysresult)
-conn.commit()
-conn.close()
+# conn.commit()
+# conn.close()
 
 
 # edit_student.edit_schedule(2552323)
@@ -33,6 +33,6 @@ conn.close()
 # c.execute("SELECT * FROM students")
 # ossysresult = c.fetchone()
 # print(ossysresult)
-# conn.commit()
-# conn.close()
+conn.commit()
+conn.close()
 
