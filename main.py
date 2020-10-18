@@ -23,7 +23,7 @@ while __name__ == "__main__":
         student_num = input("Please enter the student's number >> ")
         delete_student.del_student(int(student_num))
     elif int(choice) == 4:
-        student_num = input("Please enter the student's number >> ") 
+        student_num = input("Please enter the student's number >> ")
         edit_student.edit_schedule(int(student_num))
     else:
         print("Thanks for using the program.")
