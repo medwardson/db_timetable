@@ -1,8 +1,3 @@
-"""
-open database and check number
-if the number exist return false else return true
-
-"""
 import sqlite3
 
 def Check_Student(student_num):

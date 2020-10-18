@@ -13,7 +13,6 @@ def add_student():
         else:
             break
 
-
     p1 = input("Enter class 1 course code >> ")
     p2 = input("Enter class 2 course code >> ")
     p3 = input("Enter class 3 course code >> ")
